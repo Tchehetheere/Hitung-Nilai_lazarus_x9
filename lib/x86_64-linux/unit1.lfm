@@ -1,0 +1,125 @@
+object Tmain: TTmain
+  Left = 481
+  Height = 489
+  Top = 174
+  Width = 742
+  Caption = 'Hitung Nilai'
+  ClientHeight = 489
+  ClientWidth = 742
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object lbl_nama: TLabel
+    Left = 37
+    Height = 17
+    Top = 56
+    Width = 34
+    Caption = 'Nama'
+  end
+  object lbl_nilai: TLabel
+    Left = 37
+    Height = 17
+    Top = 120
+    Width = 28
+    Caption = 'Nilai'
+  end
+  object btn_hitungNilai: TButton
+    Left = 96
+    Height = 65
+    Top = 184
+    Width = 192
+    Caption = 'Hitung Nilai'
+    TabOrder = 0
+    OnClick = btn_hitungNilaiClick
+  end
+  object edt_nama: TEdit
+    Left = 96
+    Height = 34
+    Top = 48
+    Width = 317
+    TabOrder = 1
+  end
+  object edt_nilai: TEdit
+    Left = 96
+    Height = 34
+    Top = 112
+    Width = 317
+    TabOrder = 2
+  end
+  object Panel1: TPanel
+    Left = 440
+    Height = 489
+    Top = 0
+    Width = 302
+    Align = alRight
+    ClientHeight = 489
+    ClientWidth = 302
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 3
+    object lbl_status: TLabel
+      Left = 64
+      Height = 25
+      Top = 24
+      Width = 174
+      Caption = 'Status Kelulusan'
+      Font.Height = -21
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
+    object lbl_grade: TLabel
+      Left = 120
+      Height = 25
+      Top = 264
+      Width = 64
+      Caption = 'Grade'
+      Font.Height = -21
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
+    object lbl_grade_value: TLabel
+      Left = 136
+      Height = 1
+      Top = 336
+      Width = 1
+      Alignment = taCenter
+      Color = clRed
+      Font.Height = -35
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbl_status_value: TLabel
+      Left = 24
+      Height = 1
+      Top = 160
+      Width = 1
+      Align = alCustom
+      Alignment = taCenter
+      DragCursor = crCross
+      Font.Color = clMaroon
+      Font.Height = -40
+      Font.Name = 'Sans'
+      ParentFont = False
+      Transparent = False
+      OnClick = lbl_status_valueClick
+    end
+    object lbl_dt_nama: TLabel
+      Left = 71
+      Height = 1
+      Top = 66
+      Width = 1
+      Font.Height = -21
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
+    object lbl_dt_nilai: TLabel
+      Left = 71
+      Height = 1
+      Top = 96
+      Width = 1
+      Font.Height = -21
+      Font.Name = 'Sans'
+      ParentFont = False
+    end
+  end
+end
