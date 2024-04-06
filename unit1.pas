@@ -94,7 +94,7 @@ begin
 
   if (nilai >= 70) AND (nilai <= 100) then
      result:= 'LULUS'
-  else if (nilai >= 0) AND (nilai <= 69.99) then
+  else if (nilai >= 0) AND (nilai < 70) then
       result:= 'TIDAK LULUS'
   else
       result:= 'Invalid';
